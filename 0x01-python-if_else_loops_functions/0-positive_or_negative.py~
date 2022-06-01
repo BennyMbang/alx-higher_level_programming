@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+import random
+number = random.randint(-10, 10)
+
+name = ['is positive', 'is negative', 'is zero']
+if number > 0:
+    print(number, name[0]))
+
+elif number == 0:
+          print(number, name[2]))
+
+else:
+                print(number, name[1]))
