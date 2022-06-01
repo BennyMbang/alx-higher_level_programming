@@ -7,7 +7,7 @@ if number > 0:
     print(number, name[0])
 
 elif number == 0:
-          print(number, name[2])
+    print(number, name[2])
 
 else:
-                print(number, name[1])
+    print(number, name[1])
