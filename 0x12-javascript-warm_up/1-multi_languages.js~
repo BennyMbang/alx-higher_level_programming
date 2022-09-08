@@ -1,0 +1,7 @@
+#!/usr/bin/node
+let myVar = 'C is fun';
+let bennyMbang = 'Python is cool';
+let myLang = 'JavaScript is amazing';
+console.log(myVar);
+console.log(bennyMbang);
+console.log(myLang);
