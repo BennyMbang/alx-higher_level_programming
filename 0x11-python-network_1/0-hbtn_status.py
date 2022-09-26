@@ -1,15 +1,11 @@
 #!/usr/bin/python3
-'''script for task 0'''
-
-
-import urllib.request as request
-
+"""fetches https://intranet.hbtn.io/status"""
+from urllib import request
 
 if __name__ == "__main__":
-    with request.urlopen("https://intranet.hbtn.io/status") as response:
-        if response.readable():
-            data = response.read()
-            print("Body response:")
-            print("\t- type: {}".format(type(data)))
-            print("\t- content: {}".format(data))
-            print("\t- utf8 content: {}".format(data.decode("utf-8")))
+    with request.urlopen('https://intranet.hbtn.io/status') as res:
+        content = res.read()
+        print("Body response:")
+        print("\t- type: {}".format(type(content)))
+        print("\t- content: {}".format(content))
+        print("\t- utf8 content: {}".format(content.decode('utf-8')))
